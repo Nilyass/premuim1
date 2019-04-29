@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '$'
+const prefix = 'm'
 const fs = require("fs")
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -10,7 +10,7 @@ client.on("ready", ()=> {
 })
 
      client.on("message", message => {
-      if (message.content === "$help") {
+      if (message.content === "mhelp") {
        const embed = new Discord.RichEmbed() 
            .setThumbnail(message.author.avatarURL)
            .setColor("#FF0000")
@@ -42,7 +42,7 @@ client.on("ready", ()=> {
   ** $invite |لدعوة البوت:robot: 
   ** invite link**:** https://discordapp.com/api/oauth2/authorize?client_id=532604442785349642&permissions=0&scope=bot**
   **Support 3rb bot link**:** https://discord.gg/YD4eaUf**
-**             __~~3rb bot~~__ By: Wolf Gamer#3068             **
+**             __~~3rb bot~~__ By: Moscow#9999      **
   -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 `)
      message.author.sendEmbed(embed)
