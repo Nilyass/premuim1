@@ -6,7 +6,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 client.on("ready", ()=> {
-  client.user.setActivity('$help | $invite', {type: "PLAYING"})
+  client.user.setActivity('prafixe | m', {type: "PLAYING"})
 })
 
      client.on("message", message => {
@@ -14,36 +14,110 @@ client.on("ready", ()=> {
        const embed = new Discord.RichEmbed() 
            .setThumbnail(message.author.avatarURL)
            .setColor("#FF0000")
-           .setDescription(`**    :sleuth_or_spy::skin-tone-1: اوامر الأداره :sleuth_or_spy::skin-tone-1:**
-**============ **
-  ** $role @user <rank> | لأعطاء رتبة لعضو معين**:large_orange_diamond: 
-  ** $roleremove @user <rank> | لازالة الرتبة من شخص معين** :orange_book: 
-  ** $role humans <rank> | لأعطاء رتبة للاشخاص فقط **:man: , :woman: 
-  ** $role bots <rank> | لأعطاء رتبة لجميع البوتات**:robot: 
-  ** $show | اضهار الشات المخفية**:blush: 
-  ** $hide | اخفاء الشات**:arrow_heading_down: 
-  ** $clear <numbr> | مسح الشات بعدد**:information_source: 
-  ** $mute @user <reason> | اعطاء العضو ميوت لازم رتبة <Muted>**:mute:
-  ** $unmute @user | لفك الميوت عن الشخص ** :loud_sound:
-  ** $kick @user <reason> | طرد الشخص من السيرفر**  :outbox_tray:
-  ** $ban @user <reason> | حضر الشخص من السيرفر** :no_entry:
-  ** $lock | تقفيل الشات**:no_entry:
-  ** $unlock | فتح الشات**:on:   
-  ** $new |فتح تيكيت ** :tickets: 
-  ** $close |لقفل التيكيت** :x:
-  ** $date |لمعرفة الوقت**:date: 
-  ** $id |لمعرفة معلوماتك**:id:
-  ** $server |معرفة كل شي عن السيرفر**:information_source: 
-  ** $bot | لمعرفة معلومات البوت**:robot: 
-  ** $avatar |لعرض صورتك**:frame_photo: 
-  ** $member |معرفة كم عضو و الحالات**:person_frowning: 
-  ** $ping |كم سرعة الانترنت**:satellite:
-  ** $setlog |وضع روم لوق
-  ** $invite |لدعوة البوت:robot: 
-  ** invite link**:** https://discordapp.com/api/oauth2/authorize?client_id=532604442785349642&permissions=0&scope=bot**
-  **Support 3rb bot link**:** https://discord.gg/YD4eaUf**
-**             __~~3rb bot~~__ By: Moscow#9999      **
-  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+           .setDescription(`** 
+
+    prefix : m
+                                        : اوامرة العامة 
+   mrole @user <rank> | لأعطاء رتبة لعضو معين
+   
+   mroleremove @user <rank> | لازالة الرتبة من شخص معين
+   
+   mrole humans <rank> | لأعطاء رتبة للاشخاص فقط 
+   
+   mrole bots <rank> | لأعطاء رتبة لجميع البوتات
+   
+   mshow | اضهار الشات المخفية
+   
+   mhide | اخفاء الشات 
+   
+   mclear <numbr> | مسح الشات بعدد
+   
+   mmute @user <reason> | اعطاء العضو ميوت لازم رتبة <Muted>
+   
+   munmute @user | لفك الميوت عن الشخص  
+   
+   mkick @user <reason> | طرد الشخص من السيرفر  
+   
+   mban @user <reason> | حضر الشخص من السيرفر 
+
+   mlock | تقفيل الشات
+   
+   munlock | فتح الشات
+   
+   اوامر العامة :
+   mnew |فتح تيكيت  
+   
+   mclose |لقفل التيكيت 
+   
+   mdate |لمعرفة الوقت
+   
+   mid |لمعرفة معلوماتك
+   
+   mserver |معرفة كل شي عن السيرفر
+   
+   mbot | لمعرفة معلومات البوت
+   
+   mavatar |لعرض صورتك
+   
+   mmember |معرفة كم  الحالات 
+   
+   mping |كم سرعة الانترنت
+   
+   msetlog |وضع روم لوق
+   
+   
+             Dv By: 💥Moscow⚡⚡⚡      
+ ة
+   mrole @user <rank> | لأعطاء رتبة لعضو معين
+   
+   mroleremove @user <rank> | لازالة الرتبة من شخص معين
+   
+   mrole humans <rank> | لأعطاء رتبة للاشخاص فقط 
+   
+   mrole bots <rank> | لأعطاء رتبة لجميع البوتات
+   
+   mshow | اضهار الشات المخفية
+   
+   mhide | اخفاء الشات 
+   
+   mclear <numbr> | مسح الشات بعدد
+   
+   mmute @user <reason> | اعطاء العضو ميوت لازم رتبة <Muted>
+   
+   munmute @user | لفك الميوت عن الشخص  
+   
+   mkick @user <reason> | طرد الشخص من السيرفر  
+   
+   mban @user <reason> | حضر الشخص من السيرفر 
+
+   mlock | تقفيل الشات
+   
+   munlock | فتح الشات
+   
+   اوامر العامة :
+   mnew |فتح تيكيت  
+   
+   mclose |لقفل التيكيت 
+   
+   mdate |لمعرفة الوقت
+   
+   mid |لمعرفة معلوماتك
+   
+   mserver |معرفة كل شي عن السيرفر
+   
+   mbot | لمعرفة معلومات البوت
+   
+   mavatar |لعرض صورتك
+   
+   mmember |معرفة كم  الحالات 
+   
+   mping |كم سرعة الانترنت
+   
+   msetlog |وضع روم لوق
+   
+   
+             Dv By: 💥Moscow⚡⚡⚡      
+
 `)
      message.author.sendEmbed(embed)
      
