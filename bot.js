@@ -15,7 +15,7 @@ client.on("ready", ()=> {
            .setThumbnail(message.author.avatarURL)
            .setColor("#FF0000")
            .setDescription(`**   
-prefix : m
+prefix : m   |  K,codes
 
 
 
@@ -64,7 +64,9 @@ prefix : m
    mping |كم سرعة الانترنت
    
    msetlog |وضع روم لوق
-   
+   mplay | لتشغيل الموسيقى
+   mskip | لتغيير الموسيقى
+   mstop | لتوقيف الموسيقى
    
              Dv By: 💥Moscow⚡⚡⚡      
       
@@ -338,7 +340,7 @@ client.on('message', message => {
             .addField('**Channels**📝 :' , `[ ${client.channels.size} ]` , true)
             .addField('**Users**🔮 :' ,`[ ${client.users.size} ]` , true)
             .addField('**Bot Name**🔰 :' , `[ ${client.user.tag} ]` , true)
-            .addField('**Bot Owner**👑 :' , `[<@ايدي حقك>]` , true)
+            .addField('**Bot Owner**👑 :' , `Moscow / StepSaud` , true)
             .setFooter(message.author.username, message.author.avatarURL)
     })
 }
