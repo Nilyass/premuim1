@@ -220,7 +220,7 @@ client.on('message', message => {
 
 
 client.on('message', async message =>{
-  var prefix = "$";
+  var prefix = "m";
 const ms = require("ms");
 if (message.author.omar) return;
 if (!message.content.startsWith(prefix)) return;
@@ -290,7 +290,7 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return mess
 
 
 client.on('message', message => {
-    if (message.content.startsWith("$avatar")) {
+    if (message.content.startsWith("mavatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -307,7 +307,7 @@ client.on('message', message => {
 });
 
 client.on("message", msg => {
-    var prefix = "$";
+    var prefix = "m";
 if(msg.content.startsWith (prefix + "id")) {
 if(!msg.channel.guild) return msg.reply('**❌ اسف لكن هذا الامر للسيرفرات فقط **');         
 const embed = new Discord.RichEmbed();
@@ -327,7 +327,7 @@ msg.channel.send({embed: embed})
 });
 
 client.on('message', message => {
-    if (message.content === ('$bot')) {
+    if (message.content === ('mbot')) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .setAuthor(client.user.username,client.user.avatarURL)
@@ -357,7 +357,7 @@ client.on("guildMemberAdd", member => {
 
 
 client.on('message', message => {
-   if (message.content.startsWith ("$id")) {
+   if (message.content.startsWith ("mid")) {
        if(!message.channel.guild) return message.reply('** This command only for servers **');
 
                var mentionned = message.mentions.users.first();
@@ -403,7 +403,7 @@ client.on('message', message => {
 client.on('message' , message => {
 
   if (message.author.bot) return;
-    if(message.content.startsWith( "$invite")) {
+    if(message.content.startsWith( "minvite")) {
  
 const embed = new Discord.RichEmbed()
   .setFooter(`©  Dream™ `)
@@ -436,7 +436,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content === "$server") {
+    if (message.content === "mserver") {
         if (!message.channel.guild) return
         var verificationLevel = message.guild.verificationLevel;
         const verificationLevels = ['None','Low','Meduim','High','Extreme'];
@@ -490,7 +490,7 @@ client.on('message', message => {
 
 client.on("message", (message) => {
     /// DREAM
-var prefix = '$';//البرفكس
+var prefix = 'm';//البرفكس
 //ملاحظ يجب عليك ان تسوي رتبة باْسم//
 //Support Team//
    if (message.content.startsWith(prefix + "new")) {     /// DREAM
@@ -524,7 +524,7 @@ var prefix = '$';//البرفكس
     }
  
  
-  if (message.content.startsWith("$close")) {
+  if (message.content.startsWith("mclose")) {
         if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(`You can't use the close command outside of a ticket channel.`);
  
        message.channel.send(`هل انت متأكد من اقفالك للتذكرة اذا متأكد اكتب $confirm`)
@@ -549,7 +549,7 @@ var prefix = '$';//البرفكس
 
 
 client.on('message' , message => {
-  var prefix = "$";//البرفكس
+  var prefix = "m";//البرفكس
   if(message.author.bot) return;
   if(message.content.startsWith(prefix + "ping")) {
  message.channel.send('Pong...').then((msg) => {
@@ -578,7 +578,7 @@ client.on('guildMemberAdd', Sal => { //By Salto7#4595
 
 
 client.on("message", message => {
-	var prefix = "$";
+	var prefix = "m";
 	var args = message.content.split(' ').slice(1); 
 	var msg = message.content.toLowerCase();
 	if( !message.guild ) return;
