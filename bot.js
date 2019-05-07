@@ -410,7 +410,7 @@ const embed = new Discord.RichEmbed()
      .setColor(0xd3d0c4)
 .setAuthor(message.author.username, message.author.avatarURL)
 .setTitle(':arrow_right: Click Here Invite Link اضغط هنا')
-.setURL('https://discordapp.com/api/oauth2/authorize?client_id=532604442785349642&permissions=0&scope=bot')
+.setURL('https://discordapp.com/api/oauth2/authorize?client_id=571042675021578240&permissions=8&scope=bot')
 
 message.channel.sendEmbed(embed);
 
