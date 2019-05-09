@@ -15,7 +15,7 @@ client.on("ready", ()=> {
            .setThumbnail(message.author.avatarURL)
            .setColor("#FF0000")
            .setDescription(`**   
-prefix : m   |  K,codes
+prefix : m   |  6բlx
 
 
 
@@ -71,8 +71,8 @@ prefix : m   |  K,codes
 
    mstop | لتوقيف الموسيقى
    
-             Dv By: 💥Moscow⚡⚡⚡      
-      
+                  
+           6բlx
 
 `)
      message.author.sendEmbed(embed)
